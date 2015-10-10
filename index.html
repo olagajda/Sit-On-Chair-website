@@ -140,11 +140,14 @@
             <div class="contact-left">
                 <input type="text" placeholder="Imię">
                 <input type="email" placeholder="email">
-                <input type="text" placeholder="Wiadomość">
+                <textarea placeholder="Wiadomość" class="message"></textarea>
             </div>
             <div class="contact-right">
                 <img src="images/red_chair.png">
-                <input type="checkbox" name="Zgadzam się na przetwarzanie danych osobowych">
+                <div class="checkbox">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">Zgadzam się na przetwarzanie danych osobowych</label>
+                </div>
                 <input type="submit" value="WYŚLIJ">
             </div>
         </form>
