@@ -543,3 +543,41 @@ textarea {
     border: none;
     outline: none;
 }
+
+/*footer*/
+
+.copyright {
+    font-size: 13px;
+    color: #9a9a9a;
+    padding-bottom: 23px;
+
+}
+
+footer .container {
+    position: relative;
+}
+
+footer .container *  {
+    display: inline-block;
+
+}
+
+.footer-logo {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #9a9a9a;
+    position: absolute;
+    right: 20px;
+    bottom: 23px;
+}
+
+.footer-logo span {
+    color: #9a9a9a;
+    font-family: "ralewaybold", sans-serif;
+}
+
+.social {
+    position: absolute;
+    right: 190px;
+    bottom: 20px;
+}
