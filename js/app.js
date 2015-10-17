@@ -66,8 +66,99 @@ $(function(){
 
 
 
+    var arrowRight = $(".arrow-right");
+    var arrowLeft = $(".arrow-left");
+    //
+    //arrowRight.on("click", function(event){
+    //
+    //
+    //    console.log("hejki");
+    //
+    //    $(this).parent().find(".slider1").hide("slide", {
+    //        direction: "right"
+    //    }, 500, function(){
+    //
+    //
+    //        $(this).parent().find(".slider2").show("slide", {
+    //            direction: "left"
+    //        }, 500);
+    //
+    //    });
+    //
+    //
+    //
+    //
+    //});
+
+    var images = $(".slide");
+    var visibleImage = 0;
+    var arrows = $(".arrow");
+    images.eq(visibleImage).show();
 
 
+    arrows.on("click", function(event){
+
+
+        var directHide = "right";
+        var directShow = "left";
+
+
+
+        if($(this).hasClass("arrow-right")) {
+
+            images.eq(visibleImage).hide("slide", {
+                direction: directHide
+            }, 500);
+
+            visibleImage++;
+        }
+
+
+        else {
+
+            directHide = "left";
+
+            images.eq(visibleImage).hide("slide", {
+                direction: directHide
+            }, 500);
+
+            visibleImage--;
+        }
+
+
+
+        if( visibleImage >= images.length) {
+            visibleImage = 0;
+        }
+
+        if( visibleImage < 0) {
+            visibleImage = images.length-1;
+        }
+
+
+        if($(this).hasClass("arrow-right")) {
+
+            images.eq(visibleImage).delay(501).show("slide", {
+                direction: directShow
+            }, 500);
+
+        }
+
+
+        else {
+
+            directShow = "right";
+
+            images.eq(visibleImage).delay(501).show("slide", {
+                direction: directShow
+
+            }, 500);
+
+        }
+
+
+
+    });
 
 
 
