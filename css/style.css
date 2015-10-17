@@ -84,9 +84,9 @@ nav {
 }
 
 .submenu-triangle {
-    border-bottom: 10px solid black;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+    border-bottom: 8px solid black;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
     display: none;
     height: 0;
     position: absolute;
@@ -106,6 +106,7 @@ nav {
     width: 120px;
     left: 10px;
     font-size: 14px;
+    z-index: 2;
 }
 
 .submenu li {
@@ -118,13 +119,7 @@ nav {
 }
 
 
-.menu li:hover .submenu {
-    display:block;
-}
 
-.menu li:hover .submenu-triangle {
-    display: block;
-}
 
 
 
@@ -225,8 +220,8 @@ main .container .box {
 }
 
 
-.box1 .title,
-.box2 .title {
+
+.box12 .title {
     position: absolute;
     background-color: rgba(255,255,255,.4);
     top: 133px;
