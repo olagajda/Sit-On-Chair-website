@@ -53,7 +53,7 @@ a {
     text-decoration: none;
 }
 
-/*menu*/
+/* menu */
 
 header {
     background-color: black;
@@ -68,7 +68,8 @@ header {
     padding: 10px;
 }
 
-span {
+.slider span,
+header span {
     color: #27c7ab;
 
 }
@@ -120,10 +121,7 @@ nav {
 
 
 
-
-
-
-/*slider*/
+/* slider */
 
 
 .slider {
@@ -141,6 +139,7 @@ nav {
     font-size: 70px;
     font-family:"ralewayextralight", sans-serif;
     top: 190px;
+    cursor: pointer;
 }
 
 .slider img {
@@ -197,7 +196,7 @@ nav {
 
 
 
-/*main*/
+/* main */
 
 
 main .container {
@@ -268,7 +267,7 @@ main .underline {
     padding-left: 8px;
 }
 
-/*cennik*/
+/* prices */
 
 
 .prices {
@@ -283,6 +282,7 @@ main .underline {
     padding-top: 40px;
     margin-bottom: 40px;
 }
+
 
 .prices .underline {
     position: absolute;
@@ -438,18 +438,123 @@ tr:nth-of-type(even) td {
 }
 
 
+/* compose your chair */
 
-/*kontakt*/
 
-
-.section-title {
-    text-transform: uppercase;
-    font-size: 19px;
-    height: 60px;
-    padding-top: 40px;
-    margin-bottom: 40px;
+.compose {
+    background-color: #e5e5e5;
 }
 
+.section-title-right {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.underline-right {
+    right: 5px;
+
+}
+
+.compose-left {
+    width: 326px;
+    height: 500px;
+    display: inline-block;
+    margin-bottom: 90px;
+}
+
+.dropdown {
+    height: 63px;
+    width: 320px;
+    border: 2px solid #b8e7da;
+    font-size: 34px;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 0;
+    background-color: white;
+    position: relative;
+    color: #666666;
+}
+
+.dropdown dt span {
+    color: #e0e0e0;
+    font-family: "ralewayextralight", sans-serif;
+
+
+}
+
+.dropdown dd {
+    display: none;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #c8c8c8;
+    z-index: 3;
+    padding-top: 10px;
+
+}
+
+.dropdown li {
+    font-family: "ralewayextralight", sans-serif;
+    padding-left: 15px;
+    padding-right: 100px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    max-width: 320px;
+}
+
+.blue-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 8px 0 8px;
+    border-color: #27c7ac transparent transparent transparent;
+    position: absolute;
+    right: -5px;
+    top: 5px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.compose .checkbox {
+    position: absolute;
+    left: -23px;
+}
+
+.compose .checkbox label {
+    font-size: 30px;
+}
+
+.compose-middle {
+    display: inline-block;
+    width: 320px;
+    position: relative;
+}
+
+.compose-middle img {
+    position: absolute;
+    left: 20px;
+
+}
+
+.compose-right {
+    width: 325px;
+    height: 405px;
+    display: inline-block;
+    margin: 0 0 90px 0;
+    position: relative;
+}
+
+
+/*contact*/
+
+
+.compose .underline,
 .contact .underline {
     position: absolute;
     top: 65px;
@@ -458,6 +563,7 @@ tr:nth-of-type(even) td {
     background-color: #27c7ab;
 }
 
+select,
 input {
     display: inline-block;
 }
@@ -469,6 +575,7 @@ input {
     margin-bottom: 90px;
 }
 
+
 .contact-right {
     width: 375px;
     height: 405px;
@@ -477,7 +584,9 @@ input {
     position: relative;
 }
 
-.contact-left input, textarea {
+.compose-left input,
+.contact-left input,
+textarea {
     height: 63px;
     width: 596px;
     border: 2px solid #b8e7da;
@@ -491,8 +600,9 @@ textarea {
     height: 180px;
     max-height: 180px;
     max-width: 596px;
-
 }
+
+.compose-right img,
 .contact-right img {
     padding: 0 50px;
 }
@@ -538,6 +648,9 @@ textarea {
     display: block;
 }
 
+
+
+.compose-right input,
 .contact-right input {
     height: 70px;
     width: 320px;
@@ -555,16 +668,19 @@ textarea {
     left: 28px;
 }
 
+.compose-right input:focus
 .contact-right input:focus {
     border: none;
     outline: none;
 }
 
+.compose-right input:hover,
 .contact-right input:hover {
     border: none;
     outline: none;
 }
 
+.compose-right input:active,
 .contact-right input:active {
     border: none;
     outline: none;

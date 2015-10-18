@@ -64,35 +64,10 @@ $(function(){
 
     // Slider:
 
-
-
-    var arrowRight = $(".arrow-right");
-    var arrowLeft = $(".arrow-left");
-    //
-    //arrowRight.on("click", function(event){
-    //
-    //
-    //    console.log("hejki");
-    //
-    //    $(this).parent().find(".slider1").hide("slide", {
-    //        direction: "right"
-    //    }, 500, function(){
-    //
-    //
-    //        $(this).parent().find(".slider2").show("slide", {
-    //            direction: "left"
-    //        }, 500);
-    //
-    //    });
-    //
-    //
-    //
-    //
-    //});
-
+    var arrows = $(".arrow");
     var images = $(".slide");
     var visibleImage = 0;
-    var arrows = $(".arrow");
+
     images.eq(visibleImage).show();
 
 
@@ -159,6 +134,28 @@ $(function(){
 
 
     });
+
+
+
+    // Dropdown compose-your-chair form:
+
+
+    var formArrow = $(".blue-arrow");
+
+    formArrow.on("click", function(event){
+
+        console.log("hejki");
+
+        $(this).parent().parent().find("dd").slideToggle(500);
+
+
+
+    });
+
+
+
+
+
 
 
 
