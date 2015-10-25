@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reset.css">
+    <!--<link rel="stylesheet" href="css/old-style.css">-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
 
@@ -98,6 +99,7 @@
         </a>
     </div>
 </main>
+
 <section class="prices area">
     <div class="container">
         <p class="section-title">Cennik</p>
@@ -175,9 +177,9 @@
                     <dt><span>Wybierz rodzaj</span><div class="blue-arrow"></div></dt>
                     <dd>
                         <ul>
-                            <li data-table="Clair">Clair</li>
-                            <li data-table="Margarita">Margarita</li>
-                            <li data-table="Selena">Selena</li>
+                            <li data-chair="Clair" data-chair-price="2400">Clair</li>
+                            <li data-chair="Margarita" data-chair-price="2200">Margarita</li>
+                            <li data-chair="Selena" data-chair-price="2000">Selena</li>
                         </ul>
                     </dd>
                 </dl>
@@ -186,9 +188,9 @@
                     <dt><span>Wybierz kolor</span><div class="blue-arrow"></div></dt>
                     <dd>
                         <ul>
-                            <li data-table="Czerwony">Czerwony</li>
-                            <li data-table="Czarny">Czarny</li>
-                            <li data-table="Szary">Szary</li>
+                            <li data-color="Czerwony" data-color-price="0">Czerwony</li>
+                            <li data-color="Czarny" data-color-price="0">Czarny</li>
+                            <li data-color="Szary" data-color-price="0">Szary</li>
                         </ul>
                     </dd>
                 </dl>
@@ -197,16 +199,16 @@
                     <dt><span>Wybierz materiał</span><div class="blue-arrow"></div></dt>
                     <dd>
                         <ul>
-                            <li data-table="Skóra">Skóra</li>
-                            <li data-table="Alkantara">Alkantara</li>
-                            <li data-table="Tkanina">Tkanina</li>
+                            <li data-fabric="Skóra" data-fabric-price="1000">Skóra</li>
+                            <li data-fabric="Alcantara" data-fabric-price="1500">Alcantara</li>
+                            <li data-fabric="Tkanina" data-fabric-price="0">Tkanina</li>
                         </ul>
                     </dd>
                 </dl>
 
 
-                <div class="checkbox">
-                    <input type="checkbox" id="transport">
+                <div class="checkbox check-box">
+                    <input type="checkbox" id="transport" data-transport-price="200">
                     <label for="transport">Transport</label>
                 </div>
             </div>
@@ -230,8 +232,8 @@
                         <td id="fabric-price"></td>
                     </tr>
                     <tr>
-                        <td id="transport-yes"></td>
-                        <td id="transport-price"></td>
+                        <td id="transport-yes"><p>Transport</p></td>
+                        <td id="transport-price"><p>0</p></td>
                     </tr>
                     <tr>
                         <td>SUMA</td>
